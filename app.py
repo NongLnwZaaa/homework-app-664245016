@@ -257,10 +257,10 @@ elif page == "Admin / Setup":
     st.subheader("⚙️ เข้าสู่ระบบผู้ดูแลระบบ")
     
     if not st.session_state.is_admin:
-        # กำหนดรหัสผ่านแอดมินตรงนี้ (สามารถเปลี่ยนเป็นใช้ st.secrets ได้)
-        ADMIN_PASSWORD = "admin"
+        # ดึงรหัสผ่านแอดมินจาก Streamlit Secrets
+        ADMIN_PASSWORD = st.secrets["admin_password"]
         
-        pwd = st.text_input("กรุณากรอกรหัสผ่าน (ลองใส่คำว่า admin)", type="password")
+        pwd = st.text_input("กรุณากรอกรหัสผ่าน", type="password")
         if st.button("Login"):
             if pwd == ADMIN_PASSWORD:
                 st.session_state.is_admin = True
