@@ -74,7 +74,7 @@ with st.sidebar:
     
     # โฟลเดอร์สำหรับการบ้านเก่า
     st.markdown("### 📂 การบ้านเก่า")
-    st.markdown("👉 [โปรเจกต์ Book Recommender (GitHub)](https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME)")
+    st.markdown("👉 [โปรเจกต์ Book Recommender (GitHub)](https://github.com/NongLnwZaaa/homework-app-664245016/tree/main/Homework)")
     st.caption("คลิกเพื่อไปยังคลังโค้ดของการบ้านเก่า")
     
     st.divider()
