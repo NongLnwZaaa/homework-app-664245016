@@ -25,12 +25,28 @@ st.markdown(
     <style>
       .block-container {padding-top: 1.3rem; padding-bottom: 2rem;}
       .hero {
-        padding: 1.4rem 1.6rem; border-radius: 22px;
-        background: linear-gradient(120deg, #111827 0%, #1f2937 55%, #1d4ed8 100%);
-        color: white; margin-bottom: 1rem;
+        padding: 1.5rem 2rem; 
+        border-radius: 22px;
+        /* ใช้พื้นหลังเป็นรูปภาพ และมีสีไล่ระดับแบบโปร่งใสทับนิดๆ เพื่อให้อ่านตัวหนังสือได้ */
+        background: linear-gradient(rgba(17, 24, 39, 0.75), rgba(29, 78, 216, 0.6)), 
+                    url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=2070');
+        background-size: cover;
+        background-position: center;
+        color: white; 
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       }
-      .hero h1 {margin:0; font-size:2.15rem;}
-      .hero p {opacity:.88; margin:.35rem 0 0 0;}
+      .hero h1 {
+        margin:0; 
+        font-size:2.25rem; 
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+      }
+      .hero p {
+        opacity: 0.95; 
+        margin: 0.5rem 0 0 0; 
+        font-size: 1.05rem;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+      }
       .book-card {
         padding: 1rem 1.1rem; border: 1px solid rgba(128,128,128,.25);
         border-radius: 16px; margin-bottom: .75rem;
